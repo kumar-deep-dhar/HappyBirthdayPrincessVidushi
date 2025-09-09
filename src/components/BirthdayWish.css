@@ -1,0 +1,222 @@
+/* Prevent body scroll when modal is open */
+body.modal-open {
+  overflow: hidden;
+}
+
+/* Birthday Wish Modal */
+.birthday-wish {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  backdrop-filter: blur(10px);
+  animation: fadeIn 0.3s ease-out;
+}
+
+.wish-content {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 25px;
+  padding: 40px;
+  max-width: 1000px;
+  width: 90%;
+  height: 400px;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+  position: relative;
+  animation: slideInUp 0.4s ease-out;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.wish-content::-webkit-scrollbar {
+  width: 16px;
+}
+
+.wish-content::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+.wish-content::-webkit-scrollbar-thumb {
+  background: rgba(255, 215, 0, 0.9);
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.wish-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 215, 0, 1);
+}
+
+/* Firefox scrollbar */
+.wish-content {
+  scrollbar-width: auto;
+  scrollbar-color: rgba(255, 215, 0, 0.9) rgba(255, 255, 255, 0.2);
+}
+
+
+.wish-header {
+  text-align: center;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.wish-icon {
+  font-size: 2.5rem;
+  animation: pulse 2s infinite;
+  color: #ffd700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.wish-header h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 600;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.wish-message {
+  margin-bottom: 30px;
+}
+
+.wish-message p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: white;
+  margin-bottom: 20px;
+  text-align: justify;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.wish-love {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.3rem;
+  color: #ffd700;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 25px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.wish-close-btn {
+  background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 8px 25px rgba(255, 107, 107, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.wish-close-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(255, 107, 107, 0.4);
+  background: linear-gradient(45deg, #ff8e8e, #ff6b6b);
+}
+
+.scroll-hint {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  color: #ffd700;
+  font-size: 0.9rem;
+  opacity: 0.9;
+  animation: pulse 2s infinite;
+}
+
+.scroll-hint span {
+  display: inline-block;
+  padding: 5px 15px;
+  background: rgba(255, 215, 0, 0.1);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+/* Additional Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Responsive Design for Modal */
+@media (max-width: 768px) {
+  .wish-content {
+    padding: 30px 20px;
+    margin: 20px;
+    height: 80vh;
+  }
+  
+  .wish-header h2 {
+    font-size: 2rem;
+  }
+  
+  .wish-icon {
+    font-size: 2rem;
+  }
+  
+  .wish-message p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .wish-content {
+    padding: 25px 15px;
+    height: 85vh;
+  }
+  
+  .wish-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .wish-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .wish-message p {
+    font-size: 0.95rem;
+  }
+}

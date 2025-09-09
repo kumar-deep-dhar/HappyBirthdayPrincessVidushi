@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/princess-v-birthday/static/css/main.c2ec2f18.css",
+    "main.js": "/princess-v-birthday/static/js/main.e7a1b2fb.js",
+    "index.html": "/princess-v-birthday/index.html",
+    "main.c2ec2f18.css.map": "/princess-v-birthday/static/css/main.c2ec2f18.css.map",
+    "main.e7a1b2fb.js.map": "/princess-v-birthday/static/js/main.e7a1b2fb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2ec2f18.css",
+    "static/js/main.e7a1b2fb.js"
+  ]
+}
