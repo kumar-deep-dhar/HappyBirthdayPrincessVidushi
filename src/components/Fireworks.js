@@ -7,7 +7,7 @@ const Fireworks = () => {
     const colors = ['#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#feca57', '#ff9ff3'];
     
     // Create multiple fireworks
-    const newFireworks = [];
+    //const newFireworks = [];
     for (let i = 0; i < 5; i++) {
       setTimeout(() => {
         const firework = {
