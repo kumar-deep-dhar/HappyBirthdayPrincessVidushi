@@ -68,6 +68,19 @@ const BirthdayWishSection = () => {
               The world is a better place because you are in it.
             </p>
             
+            <p>
+              Your courage to be authentically yourself in a world that often asks us to conform 
+              is truly inspiring. You show us all that it's okay to dream big, to love deeply, 
+              and to never apologize for being exactly who you are meant to be.
+            </p>
+            
+            <p>
+              As the stars twinkle above and the world celebrates your special day, know that 
+              you have touched countless lives in ways that will ripple through time. 
+              Your legacy of kindness, your spirit of adventure, and your heart full of love 
+              will continue to inspire generations to come.
+            </p>
+            
             <p className="wish-love">
               With infinite love, admiration, and best wishes for your special day 💖✨
             </p>
