@@ -2,7 +2,6 @@
   "name": "princess-v-birthday-react",
   "version": "1.0.0",
   "description": "A beautiful React.js birthday website for Princess V",
-  "homepage": "https://happybirthdayprincessvidushi.netlify.app/princess-v-birthday",
   "private": true,
   "dependencies": {
     "framer-motion": "^10.16.4",
