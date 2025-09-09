@@ -7,7 +7,7 @@ const Balloons = () => {
     const colors = ['#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#feca57', '#ff9ff3'];
     
     // Create balloons with delays
-    //const newBalloons = [];
+    const newBalloons = [];
     for (let i = 0; i < 10; i++) {
       setTimeout(() => {
         const balloon = {
